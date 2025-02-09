@@ -2,13 +2,6 @@ package org.example;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
-//import org.apache.spark.sql.functions;
-import org.apache.spark.sql.functions.*;
-import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.core.config.Configurator;
-import org.apache.log4j.Logger;
-import org.apache.spark.sql.types.DataTypes;
-import org.apache.spark.sql.types.StructType;
 
 import java.util.*;
 import java.util.stream.Collectors;
