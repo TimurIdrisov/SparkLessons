@@ -39,14 +39,17 @@ public class Main {
             }
 
             List<String> staticColumns = new ArrayList<>(Arrays.asList("source_file", "name", "id", "org"));
-            HashMap<String, String> renCols = new HashMap<String, String>();
+            List<String> dinamicColumns = new ArrayList<>(Arrays.asList("q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"));
+
+
+              HashMap<String, String> renCols = new HashMap<String, String>();
             int numColumns = columnsNamesDf.columns().length;
             for (int i = 0; i < numColumns; ++i) {
                 renCols.put(vkcPortionDf.columns()[i], row.getString(i));
             }
 
             TransformDF transformedDF = new TransformDF(vkcPortionDf);
-            transformedDF.renameColumns(renCols, staticColumns);
+            transformedDF.renameColumns(renCols, staticColumns, dinamicColumns);
             transformedDF.unpivotDf(staticColumns);
 
             transformedDF.getDf().show();
@@ -55,5 +58,10 @@ public class Main {
         ss.stop();
 
     }
+
+    public static void Func(){
+        System.out.println("ddddd");
+    }
+
 }
 
