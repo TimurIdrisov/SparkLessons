@@ -37,3 +37,8 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/src/main/resources/s2t/00_templ.xlsx
+/src/main/resources/s2t/custvoice/001_file.xlsx
+/src/main/resources/s2t/custvoice/002_file.xlsx
+/src/main/resources/s2t/custvoice/003_file.xlsx
+/result.xlsx
