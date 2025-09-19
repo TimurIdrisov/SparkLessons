@@ -44,7 +44,7 @@ public class TransformDF {
     }
 
 //Метод переименовывает колонки и удаляет лишние колонки
-    public void renameColumns(HashMap<String, String> columnsToRename, List<String> staticColumns) {
+    public void renameColumns(HashMap<String, String> columnsToRename, List<String> staticColumns, List<String> dinamicColumns) {
         // Собираем в коллекцию колонки, у которых значение null в HashMap
         List<String> columnsToDrop = columnsToRename.entrySet().stream()
                 .filter(entry -> entry.getValue() == null)
